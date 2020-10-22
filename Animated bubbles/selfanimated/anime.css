@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.buddy{
+	width: 100%;
+	height: 100vh;
+	background: url(pica/background.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+.logo{
+	width: 100px;
+	cursor: pointer;
+}
+
+.navy{
+	width: 85%;
+	height: 15%;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	margin:auto;  
+}
+
+button{
+	color: yellow;
+	padding: 10px 25px;
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 24px;
+	outline: none;
+	cursor: pointer;
+}
+
+.contenta{
+	color: white;
+	top: 50%;
+	left: 10%;
+	position: absolute;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+h1{
+	font-size: 70px;
+	line-height: 80px;
+	margin: 10px 0 30px;
+}
+
+.bubbly img{
+	width: 50px;
+	animation: bubble 8s linear infinite;
+}
+
+.bubbly{
+	width: 100%;
+	align-items: center;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	bottom: -77px;
+}
+
+@keyframes bubble{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+	25%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(-70vh);
+		opacity: 0;
+	}
+}
+
+.bubbly img:nth-child(1){
+	animation-delay: 2s;
+	width: 25px;
+}
+.bubbly img:nth-child(2){
+	animation-delay: 1s;
+}
+.bubbly img:nth-child(3){
+	animation-delay: 4s;
+	width: 40px;
+}
+.bubbly img:nth-child(4){
+	animation-delay: 7s;
+}
+.bubbly img:nth-child(5){
+	animation-delay: 3s;
+	width: 20px;
+}
